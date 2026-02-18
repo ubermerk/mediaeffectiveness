@@ -478,7 +478,7 @@
         // Data for the Funnel Chart (Radar)
         const funnelData = {
             awareness: {
-                labels: ['TV/Video', 'Social', 'Display', 'Audio (Podcast)', 'Search', 'OOH'],
+                labels: ['TV/Video', 'Social', 'Display', 'Digital Audio', 'Search', 'OOH'],
                 datasets: [{
                     label: 'Effectiveness Score (Awareness)',
                     data: [95, 75, 40, 85, 30, 80],
@@ -488,7 +488,7 @@
                 }]
             },
             consideration: {
-                labels: ['TV/Video', 'Social', 'Display', 'Audio (Podcast)', 'Search', 'OOH'],
+                labels: ['TV/Video', 'Social', 'Display', 'Digital Audio', 'Search', 'OOH'],
                 datasets: [{
                     label: 'Effectiveness Score (Consideration)',
                     data: [60, 90, 50, 88, 70, 40],
@@ -498,7 +498,7 @@
                 }]
             },
             conversion: {
-                labels: ['TV/Video', 'Social', 'Display', 'Audio (Podcast)', 'Search', 'OOH'],
+                labels: ['TV/Video', 'Social', 'Display', 'Digital Audio', 'Search', 'OOH'],
                 datasets: [{
                     label: 'Effectiveness Score (Conversion)',
                     data: [40, 85, 60, 75, 95, 20],
@@ -517,7 +517,7 @@
             },
             consideration: {
                 title: "Top Performers: Consideration",
-                html: `<p><strong>Primary Driver: Social Media & Podcasts.</strong> Consideration requires education and differentiation. Social provides visual education, but <strong>Podcasts</strong> provide depth.</p><p><strong>Why Podcasts?</strong> The average podcast ad is 60s long (vs 15s for video). This allows for detailed storytelling and handling of complex USPs, driving brand favorability +18% over benchmarks.</p>`
+                html: `<p><strong>Primary Driver: Social Media & Digital Audio.</strong> Consideration requires education and differentiation. Social provides visual education, but <strong>Digital Audio</strong> provide depth.</p><p><strong>Why Digital Audio?</strong> The average digital audio ad is 30s long (vs 15s for video). This allows for detailed storytelling and handling of complex USPs, driving brand favorability +18% over benchmarks.</p>`
             },
             conversion: {
                 title: "Top Performers: Conversion",
@@ -527,7 +527,7 @@
 
         // Audio Comparison Data
         const audioComparisonData = {
-            trust: [82, 60, 45, 30], // Podcast, Radio, Streaming, Social (Reference)
+            trust: [82, 60, 45, 30], // Podcast, Radio, Audio Streaming, Social (Reference)
             recall: [78, 55, 60, 45],
             conversion: [6.5, 3.2, 4.1, 2.8] // Conversion Rate %
         };
@@ -551,7 +551,7 @@
                         { label: 'Social', data: [{x: 75, y: 5.5, r: 18}], backgroundColor: '#ec4899' },
                         { label: 'Search', data: [{x: 40, y: 8.0, r: 15}], backgroundColor: '#10b981' },
                         { label: 'Podcast', data: [{x: 80, y: 7.5, r: 12}], backgroundColor: '#8b5cf6' },
-                        { label: 'Streaming Audio', data: [{x: 65, y: 6.0, r: 10}], backgroundColor: '#6366f1' },
+                        { label: 'Audio Streaming', data: [{x: 65, y: 6.0, r: 10}], backgroundColor: '#6366f1' },
                         { label: 'Display', data: [{x: 30, y: 3.5, r: 14}], backgroundColor: '#94a3b8' }
                     ]
                 },
@@ -624,7 +624,7 @@
             mmmChartInstance = new Chart(ctxMMM, {
                 type: 'bar',
                 data: {
-                    labels: ['Podcast', 'Social', 'Display', 'TV', 'Video'],
+                    labels: ['Digital Audio', 'Social', 'Display', 'TV', 'Video'],
                     datasets: [
                         {
                             label: 'Avg ROAS ($)',
